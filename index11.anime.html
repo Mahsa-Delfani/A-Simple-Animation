@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+           .name{
+            background-image: linear-gradient(45deg, #bff0bf , #ea8d8d);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .name>h1{
+            font-family: 'Acme', sans-serif;
+            font-size: 80px;
+            color: #000;
+            transform: skewX(-15deg);
+            text-shadow: 0 3px 5px #030303;
+            animation: mahsa 0.6s 0s infinite alternate,
+                        changeColor 4.8s 0.1s ease-in-out infinite;
+        }
+
+        @keyframes shaking {
+            0% {
+                transform: skewX(-15deg);
+            }
+            5% {
+                transform: skewX(15deg);
+            }
+            10% {
+                transform: skewX(-15deg);
+            }
+            15% {
+                transform: skewX(15deg);
+            }
+            20% {
+                transform: skewX(-15deg);
+            }
+            25% {
+                transform: skewX(15deg);
+            }
+            30% {
+                transform: skewX(-15deg);
+            }
+            35% {
+                transform: skewX(15deg);
+            }
+            50% {
+                transform: skewX(0deg);
+            }
+            100% {
+                transform: skewX(0deg);
+            }
+        }
+
+        @keyframes mahsa {
+            0% {
+                color: #fff;
+            }
+            24% {
+                color: #fff;
+            }
+            25% {
+                color: #f05112;
+            }
+
+            49% {
+                color: #9e0a83;
+            }
+
+            50% {
+                color: #7611e1;
+            }
+
+            74% {
+                color: #f029cf;
+            }
+            75% {
+                color: #9cdf20;
+            }
+            99% {
+                color: #2920df;
+            }
+            100% {
+                color: #1abbd7;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="name">
+        <h1>mahsa delfani</h1>
+    </section>
+</body>
+</html>
